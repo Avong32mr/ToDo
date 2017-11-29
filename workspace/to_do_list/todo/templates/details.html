@@ -1,0 +1,19 @@
+{% include 'partials/header.html' %}
+  <div id="back">
+  <a href="/todo"><< Go Back</a>
+  </div>
+<!--  <p class="deletelink-box"><a href="/admin/todo/todo/2/delete/" class="deletelink">Delete</a></p>-->
+  <br>
+  <h1>{{todo.title}}</h1>
+  <p>{{todo.text}}</p>
+  <br>
+
+  <style type="text/css">
+
+    #back{
+      text-align:left;
+    }
+
+  </style>
+  Created on {{todo.created_at}}
+{% include 'partials/footer.html' %}

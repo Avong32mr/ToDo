@@ -1,0 +1,118 @@
+{% include 'partials/header.html' %}
+<!DOCTYPE>
+        <html>
+        <head>
+          <title>Register</title>
+          <header>
+          <h1><b>Register With <br></br>Todo</b></h1>
+          </header>
+        </head>
+        <body>
+          <div>
+            <div class="reg">
+              <h2> Registration form </h2>
+            </div>
+          <form >
+          <label>First Name</label>
+          <input type="text" name="firstname" id="firstname"><br><br>
+          <label>Last Name</label>
+          <input type="text" name="lastname" id="lastname"><br><br>
+          <label>Other Name</label>
+          <input type="text" name="othername" id="othername"><br><br>
+          <label>Mobile Number</label>
+          <input type="number"  name="mobilenumber" id="mobilenumber" ><br><br>
+          <label>Email</label>
+          <input style="border-radius: 2rem;" type="email" required="required" name="email" id="e
+          mail" ><br><br>
+          <label>Password</label>
+          <input type="password" required="required" name="password" id="password"><br><br>
+          <label>Confirm Password</label>
+          <input type="confirmpassword" required="required" name="confirmpassword" id="confirmpassword"><br><br>
+          <!-- <br></br> -->
+<!--           <label>Select Gender [RADIO BUTTON]</label><br>
+          <input type="radio" name="gender" value="male">Male <br>
+          <input type="radio" name="gender" value="female">Female <br><br> -->
+          <input style="border-radius:1rem;" type="submit" value="Register" name="submit"><br><br>
+          </div>
+      </body>
+      <footer>
+          <div class="footer-left">
+    <p>&copy; All Rights Reserved | Courtesy Bold Band....<p/>
+  </div>
+      </footer>
+
+<style type="text/css">
+header{
+  background-color: #008080;
+  color: #F3E5AB;
+  text-align: center;
+  width: 100%;
+  font-size: 10px;
+}
+body{
+  text-align:center;
+  border-radius: .2rem;
+  border: none;
+}
+
+#firstname{
+  border-radius: 2rem;
+}
+
+#lastname{
+  border-radius: 2rem;
+}
+
+#mobilenumber{
+  border-radius: 2rem;
+}
+
+#email{
+  border-radius: 2rem;
+}
+
+#othername{
+  border-radius: 2rem;
+}
+
+#phonenumber{
+  border-radius: 2rem;
+}
+
+#email{
+  border-radius: 2rem;
+}
+
+#password{
+  border-radius: 2rem;
+}
+
+#confirmpassword{
+  border-radius: 2rem;
+}
+
+
+/*#reg{
+  border-radius: 5rem;
+  border: none;
+}*/
+
+footer{
+  text-align: center;
+  background-color: #008080;
+  height: 50px ;
+  width: 100%;
+}
+
+body h2{
+  text-align: ;
+}
+
+footer{
+   color: #F3E5AB;
+}
+</style>
+</html>
+
+
+{% include 'partials/footer.html' %}

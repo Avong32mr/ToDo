@@ -1,0 +1,34 @@
+{% include 'partials/header.html' %}
+  <form action="{% url 'add' %}" method="post">
+  {% csrf_token %}
+  <body>
+  <div id="add">
+    <label for="title">Title</label><br />
+    <input style="border-radius:1rem;" type="text" name="title" id="title" />
+    <br>
+    <label for="text"> Text</label><br />
+    <textarea style="border-radius:1rem;" style="width:100%;" name="text" id="text"></textarea>
+    <br><br>
+    <input style="border-radius:1rem;"  type="submit" value="Submit" />
+  </form>
+  <br>
+  </div>
+  <a href="/">Go Back</a>
+
+  <style type="text/css">
+  body{
+    overflow: hidden;
+    text-align: center;
+    color: gray;
+
+    /*#title{
+      border-radius: 2rem;
+    }
+
+    #text{
+      border-radius: 4rem;*/
+    }
+  }
+  </style>
+  </body>
+{% include 'partials/footer.html' %}
